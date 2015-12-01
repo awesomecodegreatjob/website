@@ -7,3 +7,15 @@ header {
 		font-family: $maximum;
 	}
 }
+nav.main {
+	@extend %wrapper;
+	border-bottom: 1px solid $primary-color;
+	padding: 1em 0;
+	margin-bottom: 2em;
+	ul {
+		text-align: center;
+		li {
+			display: inline-block;
+		}
+	}
+}
