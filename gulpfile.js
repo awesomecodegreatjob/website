@@ -1,5 +1,7 @@
 var elixir = require('laravel-elixir');
 
+var node_modules = '../../../node_modules';
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -13,6 +15,10 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass('app.scss')
+        .scripts([
+            node_modules + '/jquery/dist/jquery.min.js',
+            node_modules + '/foundation-sites/dist/foundation.js'
+        ])
         .browserSync({
             proxy: 'acgj.dev'
         });

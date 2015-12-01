@@ -1,2 +1,6 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "foundation/settings";
 
+@import "../../../node_modules/foundation-sites/scss/foundation";
+
+@include foundation-global-styles;
+@include foundation-typography;

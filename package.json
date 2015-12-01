@@ -1,6 +1,7 @@
 {
   "private": true,
   "devDependencies": {
+    "foundation-sites": "^6.0.4",
     "gulp": "^3.8.8"
   },
   "dependencies": {
