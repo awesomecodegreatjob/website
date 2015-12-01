@@ -1,3 +1,8 @@
+{{--
+
+    @param Collection<Project> $projects
+
+--}}
 @extends('layouts.main')
 
 @section('content')
