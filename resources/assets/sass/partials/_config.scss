@@ -1,0 +1,19 @@
+// Variables
+$header: #8E0E35;
+$maximum: "maximum_securityregular", $helvetica;
+
+// Fonts
+@font-face {
+    font-family: 'maximum_securityregular';
+    src: url('fonts/MAXIMUMSECURITY-webfont.eot');
+    src: url('fonts/MAXIMUMSECURITY-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MAXIMUMSECURITY-webfont.woff') format('woff'),
+         url('fonts/MAXIMUMSECURITY-webfont.ttf') format('truetype'),
+         url('fonts/MAXIMUMSECURITY-webfont.svg#maximum_securityregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// Icons
