@@ -1,0 +1,9 @@
+header {
+	@extend %text-center;
+	background: $header;
+	padding: 2em 0;
+	h1 {
+		color: white;
+		font-family: $maximum;
+	}
+}

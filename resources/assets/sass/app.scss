@@ -1,6 +1,15 @@
+// Foundation
 @import "foundation/settings";
-
 @import "../../../node_modules/foundation-sites/scss/foundation";
-
 @include foundation-global-styles;
 @include foundation-typography;
+@include foundation-grid;
+
+// Utilities/Mixins
+@import 'partials/fonts';
+
+// Custom Styles
+@import 'partials/config';
+@import 'partials/page';
+@import 'partials/header';
+@import 'partials/footer';

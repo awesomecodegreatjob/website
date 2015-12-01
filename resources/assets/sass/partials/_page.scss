@@ -1,0 +1,19 @@
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+main,
+aside {
+	padding: 2em 0;
+}
+main {
+	article {
+	 padding-left: 1em;	
+	}
+}
+@media all and (min-width: 768px) {
+	main {
+		border-left: 1px solid #EEE;
+	}
+}
