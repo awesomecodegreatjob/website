@@ -1,3 +1,9 @@
+{{--
+
+    @param Collection<Project> $projects
+
+--}}
+
 @extends('layouts.main') @section('content')
 <!-- Header -->
 <header>
@@ -31,5 +37,3 @@
 		&copy; 2015 Awesome Code, Great Job!
 	</div>
 </footer>
-
-@endsection
