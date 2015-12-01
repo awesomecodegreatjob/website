@@ -12,3 +12,25 @@
 */
 
 Route::get('/', ['as' => 'home', 'uses' => 'PageController@home']);
+
+
+/**
+ * Authentication routes
+ */
+Route::group(['namespace' => 'Auth', 'prefix' => 'auth'], function() {
+
+    Route::get('login', ['as' => 'auth.loginForm', 'uses' => 'AuthController@getLogin']);
+    Route::post('login', ['as' => 'auth.login', 'uses' => 'AuthController@postLogin']);
+    Route::get('logout', ['as' => 'auth.logout', 'uses' => 'AuthController@getLogout']);
+
+});
+
+
+/**
+ * Admin routes
+ */
+Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth'], function() {
+
+    Route::get('/', ['as' => 'admin.home', 'uses' => 'ProjectController@index']);
+
+});

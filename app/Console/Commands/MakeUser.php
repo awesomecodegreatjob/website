@@ -5,6 +5,8 @@ namespace ACGJ\Console\Commands;
 use ACGJ\User;
 use Illuminate\Console\Command;
 
+use Hash;
+
 class MakeUser extends Command
 {
     /**
@@ -60,7 +62,7 @@ class MakeUser extends Command
             $this->user->create( [
                               'name'     => $username,
                               'email'    => $email,
-                              'password' => $password,
+                              'password' => Hash::make($password),
                           ] );
 
             $this->info('User created: ' . $username );

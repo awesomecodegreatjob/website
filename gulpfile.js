@@ -15,6 +15,7 @@ var node_modules = '../../../node_modules';
 
 elixir(function(mix) {
     mix.sass('app.scss')
+        .sass('admin.scss')
         .scripts([
             node_modules + '/jquery/dist/jquery.min.js',
             node_modules + '/foundation-sites/dist/foundation.js'
