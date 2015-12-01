@@ -1,0 +1,12 @@
+.about {
+	margin: 1em 0;
+	background: $primary-color;
+	color: $white;
+	padding: 1em;
+	.subheader {
+		color: $white;
+	}
+	article {
+		@extend %wrapper;
+	}
+}

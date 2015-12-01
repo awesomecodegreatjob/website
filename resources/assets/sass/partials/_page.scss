@@ -1,19 +1,22 @@
-.wrapper {
+%wrapper {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 1em;
 }
+.wrapper {
+	@extend %wrapper;
+}
 main,
 aside {
-	padding: 2em 0;
-}
-main {
-	article {
-	 padding-left: 1em;	
+	@include breakpoint(medium) {
+		/*padding: 2em 0;*/
 	}
 }
-@media all and (min-width: 768px) {
-	main {
-		border-left: 1px solid #EEE;
+main {
+	@include breakpoint(medium) {
+		border-left: 1px solid $light-gray;
+		article {
+			padding-left: 1em;
+		}
 	}
 }

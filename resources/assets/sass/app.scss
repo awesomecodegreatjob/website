@@ -4,6 +4,9 @@
 @include foundation-global-styles;
 @include foundation-typography;
 @include foundation-grid;
+@include foundation-forms;
+@include foundation-menu;
+@include foundation-button;
 
 // Utilities/Mixins
 @import 'partials/fonts';
@@ -13,3 +16,5 @@
 @import 'partials/page';
 @import 'partials/header';
 @import 'partials/footer';
+@import 'partials/about';
+@import 'partials/contact';
