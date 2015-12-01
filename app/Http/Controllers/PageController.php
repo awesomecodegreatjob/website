@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace ACGJ\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use ACGJ\Http\Requests;
+use ACGJ\Http\Controllers\Controller;
 
 class PageController extends Controller
 {

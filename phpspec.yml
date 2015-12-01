@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: ACGJ
+        psr4_prefix: ACGJ
         src_path: app

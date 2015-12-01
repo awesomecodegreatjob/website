@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Console\Commands;
+namespace ACGJ\Console\Commands;
 
-use App\User;
+use ACGJ\User;
 use Illuminate\Console\Command;
 
 class MakeUser extends Command
