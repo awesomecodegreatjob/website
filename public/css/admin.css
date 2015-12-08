@@ -2194,6 +2194,40 @@ select[multiple] {
   }
 }
 
+.top-bar {
+  padding: 0.5rem;
+}
+
+.top-bar::before,
+.top-bar::after {
+  content: ' ';
+  display: table;
+}
+
+.top-bar::after {
+  clear: both;
+}
+
+.top-bar,
+.top-bar ul {
+  background-color: #eee;
+}
+
+.top-bar input {
+  width: 200px;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 40em) {
+  .top-bar-left {
+    float: left;
+  }
+
+  .top-bar-right {
+    float: right;
+  }
+}
+
 div,
 dl,
 dt,
